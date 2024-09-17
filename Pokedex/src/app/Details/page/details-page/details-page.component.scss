@@ -1,0 +1,19 @@
+:host{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.pokeball{
+    width: 250px;
+    transform: rotate(-20deg);
+    margin: 20px 30px;
+    margin-left: auto;
+    opacity: 0.5;
+    z-index: -1;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    z-index: 20;
+}

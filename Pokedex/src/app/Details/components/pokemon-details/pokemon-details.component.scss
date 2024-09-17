@@ -1,0 +1,90 @@
+.details{
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    z-index: 10;
+    position: relative;
+    .details__img{
+        width: 100%;
+        position: absolute;
+        top: -200px;
+    }
+    .details__types{
+        display: flex;
+        gap: 10px;
+        margin-top: 150px;
+        div{
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-weight: bold;
+            color: #fff;
+        }
+    }
+    .details__about{
+        width: 100%;
+        .details__about--content{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: nowrap;
+            width: 100%;
+            img{
+                width: 30px;
+            }
+            p{
+                font-size: 14px;
+            }
+            .middle{
+                border-left: 2px solid #E0E0E0;
+                border-right: 2px solid #E0E0E0;
+                padding: 0 30px;
+            }
+            .details__about--weight, .details__about--height, .details__about--abilities{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                height: 75px;
+                text-align: center;
+            }
+        }
+    }
+    .details__description{
+        text-align: center;
+    }
+    .details__stat{
+        width: 100%;
+        .details__stat--content{
+            display: flex;
+            flex-direction: column;
+            .details__stat--info{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                .details__stat--name{
+                    border-right: 2px solid #E0E0E0;
+                    width: 15%;
+                    font-size: 14px;
+                    padding: 10px 0;
+                    padding-right: 10px;
+                }
+                .details__stat--bar{
+                    width: 85%;
+                    height: 10px;
+                    background-color: #E0E0E0;
+                    border-radius: 10px;
+                    div{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

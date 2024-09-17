@@ -1,0 +1,19 @@
+nav{
+    width: 60%;
+    margin: 20px auto;
+    ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        li{
+            color: #fff;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        li.active{
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+}

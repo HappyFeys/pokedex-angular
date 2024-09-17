@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+    //Color Primary
+    --primary: #dc0a2d;
+
+    //Color Type
+    --typeBug: #a7b723;
+    --typeDark: #75574c;
+    --typeDragon: #7037ff;
+    --typeElectric: #f9cf30;
+    --typeFairy: #e69eac;
+    --typeFighting: #c12239;
+    --typeFire: #f57d31;
+    --typeFlying: #a891ec;
+    --typeGhost: #70559b;
+    --typeNormal: #aaa67f;
+    --typeGrass: #74cb48;
+    --typeGround: #dec16b;
+    --typeIce: #9ad6df;
+    --typePoison: #a43e9e;
+    --typePsychic: #fb5584;
+    --typeRock: #b69e31;
+    --typeSteel: #b7b9d0;
+    --typeWater: #6493eb;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-color: var(--primary);
+   font-family: 'Montserrat', sans-serif;
+   width: 100%;
+}

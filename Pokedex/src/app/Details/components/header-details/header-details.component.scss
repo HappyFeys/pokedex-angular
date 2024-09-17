@@ -1,0 +1,16 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    img{
+        width: 35px;
+    }
+    h1{
+        color: white;
+    }
+    p{
+        color: white;
+        font-size: 18px;
+    }
+}

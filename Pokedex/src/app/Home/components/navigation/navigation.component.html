@@ -1,0 +1,7 @@
+<nav>
+    <ul>
+        <li (click)="loadPreviousPage()"><img src="./assets/icons/chevron_left.svg" alt="Previous"></li>
+        <li *ngFor="let page of pages" (click)="goToPage(page)" [class.active]="currentPage === page">{{ page }}</li>
+        <li (click)="loadNextPage()"><img src="./assets/icons/chevron_right.svg" alt="Next"></li>
+    </ul>
+</nav>

@@ -1,0 +1,33 @@
+.pokecard {
+    width: 110px;
+    height: 130px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    .pokecard__id{
+        margin: 8px;
+        margin-left: auto;
+        width: fit-content;
+        color: #666;
+    }
+    img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .pokecard__content{
+        background-color: #efefef;
+        width: 100%;
+        height: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

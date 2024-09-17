@@ -1,0 +1,7 @@
+<div class="pokecard" (click)="onClick()" >
+    <p class="pokecard__id">#{{ pokemon.id < 10 ? '00' + pokemon.id : pokemon.id < 100 ? '0' + pokemon.id : pokemon.id }}</p>
+    <img [src]="pokemon.sprites.front_default" alt="{{ pokemon.name }}" class="pokecard__image">
+    <div class="pokecard__content">
+        <p class="pokecard__name">{{ pokemon.name | titlecase}}</p>
+    </div>
+</div>

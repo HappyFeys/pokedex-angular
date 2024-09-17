@@ -1,0 +1,7 @@
+<app-header-details *ngIf="pokemon" [pokemon]="pokemon"/>
+<img src="./assets/icons/pokeball.svg" alt="Pokeball" class="pokeball">
+<div class="navigation">
+    <img src="./assets/icons/chevron_left.svg" alt="Previous" (click)="getPreviousPokemon(pokemon.id)">
+    <img src="./assets/icons/chevron_right.svg" alt="Next" (click)="getNextPokemon(pokemon.id)">
+</div>
+<app-pokemon-details *ngIf="pokemon && pokemonDescription" [pokemon]="pokemon" [pokemonDescription]="pokemonDescription"/>

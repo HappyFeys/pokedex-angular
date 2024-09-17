@@ -1,0 +1,44 @@
+<div class="details">
+    <img src="{{ pokemon.sprites.front_default }}" alt="{{ pokemon.name }}" class="details__img">
+    <div class="details__types">
+        <div *ngFor="let type of pokemon.types" [ngStyle]="{'background-color':pokemonDetailsService.setBgColor(type.type.name)}">{{ type.type.name | titlecase }}</div>
+    </div>
+    <h2 [ngStyle]="{'color':pokemonDetailsService.setBgColor(pokemon.types[0].type.name)}">About</h2>
+    <div class="details__about">
+        <div class="details__about--content">
+            <div class="details__about--weight">
+                <div>
+                    <img src="./assets/icons/weight.svg" alt="Weight">
+                    <p>{{ pokemon.weight/10 }} kg</p>
+                </div>
+                <p>Weight</p>
+            </div>
+            <div class="details__about--height middle">
+                <div>
+                    <img src="./assets/icons/straighten.svg" alt="Height" [ngStyle]="{'transform': 'rotate(90deg)'}">
+                    <p>{{ pokemon.height/10 }} m</p>
+                </div>
+                <p>Height</p>
+            </div>
+            <div class="details__about--abilities">
+                <div>
+                    <p *ngFor="let ability of pokemon.abilities">{{ ability.ability.name | titlecase }}</p>
+                </div>
+                <p>Moves</p>
+            </div>
+        </div>
+    </div>
+    <p class="details__description">{{ pokemonDescription.flavor_text_entries[0].flavor_text }}</p>
+    <h2 [ngStyle]="{'color':pokemonDetailsService.setBgColor(pokemon.types[0].type.name)}">Stats</h2>
+    <div class="details__stat">
+        <div class="details__stat--content">
+            <div *ngFor="let stat of pokemon.stats" class="details__stat--info">
+                <p class="details__stat--name">{{ stat.stat.name | statsTransform  }}</p>
+                <p>{{ stat.base_stat > 100 ? stat.base_stat : '0' + stat.base_stat }}</p>
+                <div class="details__stat--bar">
+                    <div [ngStyle]="{'width': setWidthStatBar(stat.base_stat) + '%', 'background-color': pokemonDetailsService.setBgColor(pokemon.types[0].type.name)}"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

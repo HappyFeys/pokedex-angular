@@ -1,27 +1,48 @@
 # Pokedex
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.2.
+Ceci est un projet réalisé  dans le cadre de mon apprentissage en Angular. Ce projet est basé sur le [Figma de Ricardo Schiniegoski](https://www.figma.com/design/lwJykPEYFaebhzexARCleh/Pok%C3%A9dex-(Community)?node-id=0-1&node-type=canvas&t=Wmj3DExf86XGXglo-0) et la [PokéApi](https://pokeapi.co/).
 
-## Development server
+## Table of contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+- [My process](#my-process)
+  - [Built with](#built-with)
+- [Author](#author)
 
-## Code scaffolding
+## Overview
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Le challenge
 
-## Build
+L'idée était de réaliser un projet simple où l'on récupère de la data sur une API publique.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Basé sur le design trouvé sur Figma Community, j'ai souhaité afficher la liste des pokémons, réaliser une pagination ainsi qu'une page détail des pokémons. 
 
-## Running unit tests
+Etant mon premier projet réalisé en Angular, j'ai pu découvrir certaines fonctionnalités et comprendre le fonctionnement de ce framework.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Screenshot
 
-## Running end-to-end tests
+![Homepage](./public/assets/screenshot/image.png)
+![Details 1](./public/assets/screenshot/image1.png)
+![Details 2](./public/assets/screenshot/image2.png)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## My process
 
-## Further help
+### Built with
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Semantic HTML5 markup
+- SCSS
+- TypeScript (Angular)
+- Flexbox
+- Mobile-first workflow
+
+## Author
+
+- Github - [Dylan Feys](https://github.com/HappyFeys)
+
+## Remarque
+
+Il y a un soucis avec la barre de recherche, il faudra que je m'y repenche dessus. La PokéApi n'a pas de endpoint pour faire des recherches dynamiques. J'avais commencé à le faire côté client, mais par manque de temps, je préfère passer à autre chose pour vraiment voir un maximum pour mon stage. 
+Le tri n'est également pas fait, mais je ne trouvais pas cela cohérent, le bouton est là pour décorer.
+Au niveau du ressenti, chouette premier projet... Hâte de retourner dessus.
